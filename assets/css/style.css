@@ -382,7 +382,7 @@ section#intro{
 	height:auto;
 	margin: 0 auto;
 	margin-top:80px;
-	padding: 40px 0 20px;
+	padding: 80px 0 20px;
 }
 
 section#bottom {
@@ -412,6 +412,7 @@ section#subintro {
 	margin: 0 auto;
 	padding: 0;
 	margin-top:80px;
+	padding-top: 40px;
 }
 /* divider */
 .divider {
