@@ -175,10 +175,17 @@ header .navbar .brand.logo {
 }
 
 .sllogo {
-	width: 8rem;
+	width: 11rem;
 	height: 100%;
 	position: relative;
 	bottom: .6rem;
+}
+
+@media only screen and (max-width: 500px) {
+	.sllogo {
+		left: 50%;
+		transform: translate(-50%);
+	}
 }
 
 
@@ -205,7 +212,7 @@ header nav {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 40px 20px;
+  padding: 50px 20px;
   color: #777777;
   text-decoration: none;
   text-shadow: none;
@@ -562,6 +569,7 @@ ul.filter li.active a{
 	width:100%;
 	margin:0;
 	padding:0;
+
 }
 
 .portfolio-area li{
@@ -599,6 +607,7 @@ ul.filter li.active a{
   display: block;
   padding:0;
   border:none;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 1);
 }
 
 .portfolio-area .thumbnail h4,
@@ -620,7 +629,14 @@ ul.filter li.active a{
 .portfolio-home .image-wrapp img{
 	margin:0;
 	padding:0;
+	width: 100%;
+	/* max-height: 170px; */
 }
+
+.port-pic {
+	height: 250px !important;
+}
+
 
 .portfolio-area .thumbnail .caption,
 .portfolio-home .thumbnail .caption{
@@ -1792,4 +1808,12 @@ ul.portfolio-area li {
 		text-align:center;
 	}
 
+	.img-logo {
+		display: none !important;
+	}
+
+}
+
+.pp_details {
+	display: none !important;
 }
