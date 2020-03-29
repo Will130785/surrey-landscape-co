@@ -9,6 +9,7 @@
 @import url('boxtile.css');
 /* ====================================== */
 
+
 .row {
 	margin-bottom:20px;
 }
@@ -175,8 +176,8 @@ header .navbar .brand.logo {
 }
 
 .sllogo {
-	width: 13rem;
-	height: 4rem;
+	width: 20rem;
+	height: 10rem;
 	
 	position: relative;
 	bottom: 1.5rem;
@@ -184,6 +185,8 @@ header .navbar .brand.logo {
 
 @media only screen and (max-width: 500px) {
 	.sllogo {
+		width: 13rem;
+		height: 4rem;
 		left: 50%;
 		transform: translate(-50%);
 	}
@@ -212,20 +215,25 @@ header nav {
 }
 
 .navbar .nav > li > a {
+	position: relative;
+	top: 4rem;
   float: none;
   padding: 40px 20px;
   color: #777777;
   text-decoration: none;
   text-shadow: none;
+  font-size: 15px;
 }
 
 .navbar .nav > li:hover > a {
-	padding-right:30px;
+	/* padding-right:30px; */
+	font-size: 20px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	text-decoration: underline;
 }
 
 header .topnav .dropdown-submenu > .dropdown-menu {
@@ -307,15 +315,15 @@ ul.topnav .dropdown-menu li > a {
 .navbar .nav .primary > a,
 .navbar .nav .primary > a:hover,
 .navbar .nav .primary > a:focus {
-	background-color: #009cea;
-	color:#fff;
+	/* background-color: #009cea; */
+	color:#000;
 }
 
 .navbar .nav .warning > a,
 .navbar .nav .warning > a:hover,
 .navbar .nav .warning > a:focus {
-	background-color: #ffbb00;
-	color:#fff;
+	/* background-color: #ffbb00; */
+	color:#000;
 }
 
 .navbar .nav .danger > a,
@@ -328,8 +336,8 @@ ul.topnav .dropdown-menu li > a {
 .navbar .nav .info > a,
 .navbar .nav .info > a:hover,
 .navbar .nav .info > a:focus {
-	background-color: #a903b3;
-	color:#fff;
+	/* background-color: #a903b3; */
+	color:#000;
 }
 
 .navbar .nav .success > a,
@@ -342,8 +350,8 @@ ul.topnav .dropdown-menu li > a {
 .navbar .nav .inverse > a,
 .navbar .nav .inverse > a:hover,
 .navbar .nav .inverse > a:focus {
-	background-color: #333;
-	color:#fff;
+	/* background-color: #333; */
+	color:#000;
 }
 
 nav select {
@@ -370,7 +378,20 @@ ul.metro li.ver .drop-4-col {
 
 #maincontent {
 	z-index:1000;
-	margin:0 0 30px;
+	margin: -50px 0 30px;
+}
+
+.about-blurb {
+	width: 48%;
+}
+
+.about-blurb__text {
+	
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .6);
+	background-color: white;
+	padding: 10px;
+	position: relative;
+	bottom: 45px;
 }
 
 
@@ -411,9 +432,10 @@ section#subintro {
 	max-height: 650px;
 	height:auto;
 	margin: 0 auto;
+	margin-bottom: 100px;
 	padding: 0;
 	margin-top:80px;
-	padding-top: 40px;
+	padding-top: 125px;
 }
 /* divider */
 .divider {
@@ -1704,6 +1726,19 @@ img.alignright{
 }
 /* custom queries */
 
+#head-section {
+	background-image: url("/assets/img/media/claudio-schwarz-purzlbaum-kTnT4FbcTvg-unsplash.jpg");
+	height: 50vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.well-box {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.navbar .navbar-inner .container {
 		margin-left: 20px;
@@ -1724,6 +1759,17 @@ img.alignright{
 	margin-top:0;
     margin-left: -20px;
     margin-right: -20px;
+}
+
+
+#head-section {
+	margin-left: -20px;
+	margin-right: -20px;
+	height: 25vh;
+}
+
+.about-blurb {
+	width: 100%;
 }
 
 ul.portfolio-area li {
@@ -1818,4 +1864,32 @@ ul.portfolio-area li {
 
 .pp_details {
 	display: none !important;
+}
+
+
+@keyframes logoAppear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.main-logo {
+	/* position: relative;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%); */
+	height: 45%;
+	width: 45%;
+	/* transition: all 4s;
+	animation: logoAppear 4s;
+	animation-fill-mode: backwards; */
+}
+
+.main-logo__pic {
+	width: 100%;
 }

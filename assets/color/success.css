@@ -198,12 +198,15 @@ ul.time-post li.year{
 }
 
 section#subintro {
-	background: #009cea;
+  background-image: url("/assets/img/media/david-ballew-tSsLjyDYs44-unsplash.jpg");
+  background-size: cover;
+  background-position: unset;
 }
 
 
 footer.footer {
-	background:#009cea;
+  background-image: url("/assets/img/media/alex-brisbey-WalgQ0AHdFM-unsplash.jpg");
+  background-size: cover;
 }
 
  /* 404 */
