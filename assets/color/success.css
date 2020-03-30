@@ -200,7 +200,14 @@ ul.time-post li.year{
 section#subintro {
   background-image: url("../img/media/david-ballew-tSsLjyDYs44-unsplash.jpg");
   background-size: cover;
-  background-position: unset;
+}
+
+.subintro-works {
+  background-image: url("../img/media/brick.jpg") !important;
+}
+
+.subintro-contact {
+  background-image: url("../img/media/45\ fence.jpg") !important;
 }
 
 

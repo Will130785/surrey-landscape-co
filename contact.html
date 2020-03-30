@@ -66,7 +66,7 @@
 
   <!-- Subhead
 ================================================== -->
-  <section id="subintro">
+  <section id="subintro" class="subintro-contact">
     <div class="jumbotron subhead" id="overview">
       <div class="container">
         <div class="row">
@@ -102,7 +102,7 @@
             </div>
           </aside>
         </div>
-        <div class="span8">
+        <div class="span8 contact-pos">
           
           <div class="spacer30"></div>
           <form action="contactform/contactform.php" method="post" role="form" class="contactForm">
@@ -110,20 +110,20 @@
           <div id="errormessage"></div>
             <div class="row">
               <div class="span4 form-group">
-                <input type="text" name="name" class="input-block-level" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="input-block-level contact-input" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
 
               <div class="span4 form-group">
-                <input type="email" class="input-block-level" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="input-block-level contact-input" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
               <div class="span8 form-group">
-                <input type="text" class="input-block-level" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="input-block-level contact-input" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
               <div class="span8 form-group">
-                <textarea class="input-block-level" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="input-block-level contact-input" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
                 <div style="text-align: center;">
                   <button class="btn btn-medium btn-primary" type="submit">Send a message</button>

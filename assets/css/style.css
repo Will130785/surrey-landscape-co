@@ -429,8 +429,7 @@ section#bottom {
 section#subintro {
 	width: 100%;
 	color: #fff;
-	max-height: 650px;
-	height:auto;
+	height: 25vh;
 	margin: 0 auto;
 	margin-bottom: 100px;
 	padding: 0;
@@ -1329,10 +1328,16 @@ a.commentlink {
   color:#fff;
   margin:0;
   padding:0;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 .subhead p {
 	padding:0;
   margin:0;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 .subhead .navbar {
   display: none;
@@ -1739,6 +1744,21 @@ img.alignright{
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
 
+.about-image {
+	position: relative;
+	bottom: 184px;
+}
+
+.contact-input {
+	padding: 20px !important;
+}
+
+.contact-pos {
+	position: relative;
+	bottom: 30px;
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.navbar .navbar-inner .container {
 		margin-left: 20px;
@@ -1756,9 +1776,20 @@ img.alignright{
   section#subintro {
     padding-left: 20px;
     padding-right: 20px;
-	margin-top:0;
+	margin-top: -20px;
     margin-left: -20px;
-    margin-right: -20px;
+	margin-right: -20px;
+	height: 10vh;
+}
+
+.subhead h3 {
+	position: relative;
+	bottom: 75px;
+  }
+
+  .subhead p {
+	position: relative;
+	bottom: 75px;
 }
 
 
@@ -1770,6 +1801,10 @@ img.alignright{
 
 .about-blurb {
 	width: 100%;
+}
+
+.about-image {
+	bottom: 0;
 }
 
 ul.portfolio-area li {
